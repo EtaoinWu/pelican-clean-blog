@@ -155,4 +155,10 @@
             <noscript>Please enable JavaScript to view the comments.</noscript>
         </div>
     {% endif %}
+
+    {% if VALINE_APPID and VALINE_APPKEY %}
+    <div id="valine_comment"></div>
+    </script>
+    {% endif %}
+    
 {% endblock content %}

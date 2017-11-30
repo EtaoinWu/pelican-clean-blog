@@ -1,0 +1,16 @@
+{% if VALINE_APPID and VALINE_APPKEY %}
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        new Valine({
+            av: AV, 
+            el: '#valine_comment',
+            app_id: '{{ VALINE_APPID }}',
+            app_key: '{{ VALINE_APPKEY }}',
+            placeholder: 'ヾﾉ≧∀≦)o 来啊，快活啊!',
+            verify:true,
+        });
+    });
+</script>
+{% endif %}
