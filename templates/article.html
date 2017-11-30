@@ -23,6 +23,8 @@
     {% for tag in article.tags %}
         <meta name="tags" content="{{tag}}">
     {% endfor %}
+    
+    {% include 'valine_script.html' %}      
 {% endblock %}
 
 {% block twitter_card %}
